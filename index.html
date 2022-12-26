@@ -10,24 +10,32 @@
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Hoja de estilo de css -->
 </head>
 <body>
-    <header>
-        <!-- <img class="logo" src="/assets/img/Logo.png" alt="Logo Cypher404"> -->
-    </header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">MARISCALDEV</a>
+        <div class="nav-links">
+            <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="pages/galeria.html">Galeria</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="#">Otros</a></li>
+            </ul>
+        </div>
+        <img src="assets/img/icons/menu.png" alt="Menu icon" class="menu-hamburger">
+    </nav>
+    <header></header>
     <main>
-        <div class="gallery">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-        </div>
-        <div class="gallery">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-            <img src="assets/img/Logo.png" alt="Logo 404Cypher">
-        </div>
+        
     </main>
 </body>
+
+<!-- SCRIPT PARA ABRIR Y CERRAR EL MENU CON EL BOTON DE MENU-HAMBURGER -->
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+ 
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
 </html>
