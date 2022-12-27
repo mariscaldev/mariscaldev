@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/gallery.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a class="logo" href="/index.html">MARISCALDEV</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a class="active" href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Otros</a></li>
+            </ul>
+        </div>
+        <img src="/assets/img/icons/menu.png" alt="Menu icon" class="menu-hamburger">
+    </nav>
+    <header>
+        <img class="fondo" src="/assets/img/background-header.jpg" alt="">
+    </header><hr>
     <main>
         <div class="gallery">
             <img src="/assets/img/Logo.png" alt="Logo 404Cypher">
@@ -25,4 +41,13 @@
         </div>
     </main>
 </body>
+<!-- SCRIPT PARA ABRIR Y CERRAR EL MENU CON EL BOTON DE MENU-HAMBURGER -->
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+ 
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 </html>
