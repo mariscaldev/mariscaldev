@@ -94,7 +94,7 @@ header .fondo{
         background-color: rgba(17, 16, 16, 0.20);
         backdrop-filter: blur(10px);
         width: 100%;
-        height: 100vh;
+        height: 42vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -145,6 +145,7 @@ header .fondo{
 }
 .main-content .container .card-container .header, .descripcion{
     padding: 20px 20px;
+    margin: auto;
     text-align: center;
     justify-content: center;
 }
@@ -164,6 +165,7 @@ header .fondo{
 }
 .main-content .container .card-container .header h2{
     margin-top: 30px;
+    font-weight: bold;
     color: #ff0303;
 }
 .main-content .container .card-container .header h4{
@@ -173,6 +175,7 @@ header .fondo{
     position: relative;
 }
 .main-content .container .card-container .descripcion p{
+    text-align: justify;
     margin: 20px 30px;
 }
 .main-content .container .card-container .descripcion h1{
@@ -194,6 +197,7 @@ header .fondo{
 .main-content .container .card-container .descripcion .myprofile button:hover{
     color: #111010;
 }
+
 @media (max-width:900px){
     .main-content .container .card-container{
         display: block;
