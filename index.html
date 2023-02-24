@@ -1,68 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Detecta ingresar caracteres especiales a nuestra pagina -->
-    <meta name="description" content="BlogPost de Cypher404, con todo el contenido que va conociendo y subiendo"> <!-- Descripcion de lo que tiene nuestra pagina -->
-    <meta name="robots" content="index,follow"> <!-- ayuda a robots a que nuestra pagina aparezca en la busqueda de contenido similar -->
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Si se abre desde pagina web, este meta es para que se escale la resolucion y se vea mejor desde un movil -->
-    <title>BlogPost | MARISCALDEV</title> <!-- Nombre que saldra en la pestaña del navegador -->
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Hoja de estilo de css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style_index.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a class="logo" href="index.html">MARISCALDEV</a>
-        <div class="nav-links">
-            <ul>
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="pages/galeria.html">Trabajos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="#">Otros</a></li>
-            </ul>
-        </div>
-        <img src="assets/img/icons/menu.png" alt="Menu icon" class="menu-hamburger">
-    </nav>
-    <header>
-        <img class="fondo" src="/assets/img/background-header.jpg" alt="">
-    </header><hr>
-    <main class="main-content">
-        <div class="container">
-            <div class="card-container">
-                <div class="header">
-                    <a href="#">
-                        <img src="assets/img/profilee.jpg" alt="Raul Mariscal">
-                    </a>
-                    <h2>Raul Mariscal</h2>
-                    <h4>Desarrollador Web</h4>
-                </div>
-                <div class="descripcion">
-                    <h1>Bienvenido</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
-                    <div class="myprofile">
-                        <a href="#">
-                            <button>
-                                Mi perfil
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br><br><br><br><br><hr><br><br><br><br><br><br><hr><br><br><br><br><br><br><hr><br><br><br><br><br><br>
-    </main><hr>
-</body>
+    <h1>MARISCALDEV</h1>
 
-<!-- SCRIPT PARA ABRIR Y CERRAR EL MENU CON EL BOTON DE MENU-HAMBURGER -->
+    <table>
+        <tr>
+            <td>
+                <a href="https://www.facebook.com/EstebanDosckett">
+                    <img src="assets/img/iconos_inicio/red/facebook.png" alt="FACEBOOK">
+                    <h2>FACEBOOK</h2>
+                </a>
+            </td>
+            <td>
+                <a href="https://www.instagram.com/_level.24._/">
+                    <img src="assets/img/iconos_inicio/red/instagram.png" alt="INSTAGRAM">
+                    <h2>INSTAGRAM</h2>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="assets/img/iconos_inicio/red/pinterest.png" alt="PINTEREST">
+                    <h2>PINTEREST</h2>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="assets/img/iconos_inicio/red/reddit.png" alt="REDDIT">
+                    <h2>REDDIT</h2>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="assets/img/iconos_inicio/red/nube.png" alt="TERABOX">
+                    <h2>TERABOX</h2>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://mail.google.com/mail/u/0/">
+                    <img src="assets/img/iconos_inicio/red/gmail.png" alt="GMAIL">
+                    <h2>GMAIL</h2>
+                </a>
+            </td>
+            <td>
+                <a href="https://www.gmx.com/">
+                    <img src="assets/img/iconos_inicio/red/gmx.png" alt="CORREO GMX">
+                    <h2>GMX</h2>
+                </a>
+            </td>
+            <td>
+                <a href="https://github.com/mariscaldev">
+                    <img src="assets/img/iconos_inicio/red/github.png" alt="GITHUB">
+                    <h2>GITHUB</h2>
+                </a>
+            </td>
+            <td>
+                <a href="pages/website.html">
+                    <img src="assets/img/iconos_inicio/red/profile.png" alt="WEBSITE">
+                    <h2>WEBSITE</h2>
+                </a>
+            </td>
+            <td>
+                <a href="https://www.youtube.com">
+                    <img src="assets/img/iconos_inicio/red/youtube.png" alt="YOUTUBE">
+                    <h2>YOUTUBE</h2>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <div id="copyright" align="center">&copy; 2022 - 2023 www.mariscaldev.com</div>
 <script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
- 
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
+(function(){
+	let cpr = document.getElementById("copyright");
+	cpr.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" www.mariscaldev.com - All Rights Reserved.";
+})();
 </script>
-
+    </footer>
+</body>
 </html>

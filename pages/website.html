@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Detecta ingresar caracteres especiales a nuestra pagina -->
+    <meta name="description" content="BlogPost de Cypher404, con todo el contenido que va conociendo y subiendo"> <!-- Descripcion de lo que tiene nuestra pagina -->
+    <meta name="robots" content="index,follow"> <!-- ayuda a robots a que nuestra pagina aparezca en la busqueda de contenido similar -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Si se abre desde pagina web, este meta es para que se escale la resolucion y se vea mejor desde un movil -->
+    <title>BlogPost | MARISCALDEV</title> <!-- Nombre que saldra en la pestaña del navegador -->
+    <link rel="stylesheet" href="../assets/css/style.css"> <!-- Hoja de estilo de css -->
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="website.html">MARISCALDEV</a>
+        <div class="nav-links">
+            <ul>
+                <li><a class="active" href="website.html">Inicio</a></li>
+                <li><a href="galeria.html">Trabajos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Otros</a></li>
+            </ul>
+        </div>
+        <img src="../assets/img/icons/menu.png" alt="Menu icon" class="menu-hamburger">
+    </nav>
+    <header>
+        <img class="fondo" src="../assets/img/background-header.jpg" alt="">
+    </header><hr>
+    <main class="main-content">
+        <div class="container">
+            <div class="card-container">
+                <div class="header">
+                    <a href="#">
+                        <img src="../assets/img/profilee.jpg" alt="Raul Mariscal">
+                    </a>
+                    <h2>Raul Mariscal</h2>
+                    <h4>Desarrollador Web</h4>
+                </div>
+                <div class="descripcion">
+                    <h1>Bienvenido</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo asperiores. Eligendi quas reiciendis dicta cum atque architecto dolore corporis ipsam. Aliquid officiis vel quas.</p>
+                    <div class="myprofile">
+                        <a href="#">
+                            <button>
+                                Mi perfil
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><hr><br><br><br><br><br><br><hr><br><br><br><br><br><br><hr><br><br><br><br><br><br>
+    </main><hr>
+</body>
+
+<!-- SCRIPT PARA ABRIR Y CERRAR EL MENU CON EL BOTON DE MENU-HAMBURGER -->
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+ 
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>
