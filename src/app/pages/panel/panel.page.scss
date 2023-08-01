@@ -1,0 +1,45 @@
+.logo {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    padding: 2% 10%;
+}
+
+.cards .card-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Puedes ajustar esta altura según tus necesidades */
+    overflow: hidden;
+    position: relative;
+}
+
+.cards .card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen sin distorsionarla */
+    transition: transform 0.5s ease-out; /* Agrega la transición aquí */
+}
+
+.cards .card:hover .card-image-container img {
+    transform: scale(1.1);
+}
+
+.cards .card {
+    transition: background-color 0.5s ease-out;
+}
+
+.cards .card:hover {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+ion-card-header{
+    text-align: center;
+}

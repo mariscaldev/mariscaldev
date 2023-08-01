@@ -1,0 +1,7 @@
+{
+  "name": "MiPagina",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
