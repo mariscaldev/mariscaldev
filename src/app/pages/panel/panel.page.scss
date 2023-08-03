@@ -1,11 +1,31 @@
-.logo {
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-}
+ion-content {
+    position: relative; /* Agrega esta propiedad para permitir el posicionamiento del pseudoelemento ::before */
+    --ion-background-color: transparent; /* Establece el fondo transparente */
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../../assets/background.jpg"); /* Reemplaza "ruta/a/" con la ruta correcta donde se encuentra la imagen */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.6; /* Ajusta la opacidad, 1 es completamente opaco y 0 es completamente transparente */
+        filter: blur(10px); /* Ajusta el desenfoque, cuanto mayor sea el valor, más desenfocado será */
+        z-index: -1; /* Asegura que el pseudoelemento esté detrás del contenido */
+    }
+}
+  
+.logo,
 .cards {
-    padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
 }
 
 .cards .card-image-container {
@@ -42,4 +62,9 @@ a {
 
 ion-card-header{
     text-align: center;
+}
+
+ion-card-title{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
