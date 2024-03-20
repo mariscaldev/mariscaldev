@@ -1,38 +1,39 @@
 ion-content {
-    position: relative; /* Agrega esta propiedad para permitir el posicionamiento del pseudoelemento ::before */
-    --ion-background-color: transparent; /* Establece el fondo transparente */
-
+    position: relative;
+    --ion-background-color: transparent;
+  
     &::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("../../../assets/background.jpg"); /* Reemplaza "ruta/a/" con la ruta correcta donde se encuentra la imagen */
+        width: 100vw; /* Cambiado a unidades vw */
+        height: 100vh; /* Cambiado a unidades vh */
+        background-image: url("../../../assets/background2.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        opacity: 0.6; /* Ajusta la opacidad, 1 es completamente opaco y 0 es completamente transparente */
-        filter: blur(10px); /* Ajusta el desenfoque, cuanto mayor sea el valor, más desenfocado será */
-        z-index: -1; /* Asegura que el pseudoelemento esté detrás del contenido */
+        opacity: 0.6;
+        filter: blur(10px);
+        z-index: -1;
     }
 }
-  
+
 .logo,
 .cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0; /* Cambiado a unidades vh */
 }
 
 .cards .card-image-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px; /* Puedes ajustar esta altura según tus necesidades */
+    height: 20vh; /* Cambiado a unidades vh */
+    max-height: 200px; /* Máximo 200px */
     overflow: hidden;
     position: relative;
 }
@@ -40,8 +41,8 @@ ion-content {
 .cards .card-image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta el tamaño de la imagen sin distorsionarla */
-    transition: transform 0.5s ease-out; /* Agrega la transición aquí */
+    object-fit: cover;
+    transition: transform 0.5s ease-out;
 }
 
 .cards .card:hover .card-image-container img {
@@ -49,28 +50,29 @@ ion-content {
 }
 
 .cards .card {
+    background-color: var(--ion-color-dark);
     transition: background-color 0.5s ease-out;
 }
 
 .cards .card:hover {
-    background-color: red;
+    background-color: var(--ion-color-micolor);
 }
 
 a {
     text-decoration: none;
 }
 
-ion-card-header{
+ion-card-header {
     text-align: center;
 }
 
-ion-card-title{
+ion-card-title {
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .custom-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
