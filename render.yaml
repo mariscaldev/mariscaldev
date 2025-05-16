@@ -1,0 +1,43 @@
+# render.yaml
+services:
+  - type: web
+    name: laravel-app
+    env: docker
+    plan: free
+    region: oregon
+    autoDeploy: true
+    dockerfilePath: Dockerfile
+    # Arrancamos Laravel y ejecutamos migraciones al levantar el contenedor
+    startCommand: >
+      sh -c "php artisan migrate --force &&
+             php -S 0.0.0.0:8000 -t public"
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        # Marca como secreto para que no se vea en el panel de Render
+        sync: false
+      - key: APP_URL
+        value: https://laravel-app.onrender.com
+
+      # Base de datos Supabase (PostgreSQL)
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        value: aws-0-us-east-2.pooler.supabase.com
+      - key: DB_PORT
+        value: "6543"
+      - key: DB_DATABASE
+        value: postgres
+      - key: DB_USERNAME
+        value: postgres.semhdabnyqecqmgqdsmw
+      - key: DB_PASSWORD
+        sync: false
+
+      # Cache y sesión
+      - key: CACHE_DRIVER
+        value: array
+      - key: SESSION_DRIVER
+        value: database
